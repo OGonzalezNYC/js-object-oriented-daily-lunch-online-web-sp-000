@@ -198,7 +198,9 @@ class Customer {
   
   
   meals() {
-   
+   return this.deliveries().map(function(delivery) {
+     delivery.mealId
+   })
   }
   
   
