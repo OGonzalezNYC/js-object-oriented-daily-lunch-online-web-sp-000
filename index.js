@@ -219,7 +219,7 @@ class Customer {
   
   
   totalSpent() {
-    
+    // return 
   }
 }
 
