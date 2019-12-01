@@ -228,7 +228,7 @@ class Meal {
   }
   
   deliveries() {
-    return store.deliveries.filter(delivery => delivery.mealId === meal.id)
+    return store.deliveries.filter(delivery => delivery.mealId === this.id)
   }
   
   customers() {
