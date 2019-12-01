@@ -176,7 +176,8 @@ class Neighborhood {
   }
   
   meals() {
-    
+    let x = this.deliveries().map(delivery => delivery.mealId);
+    return store.meals.filter(meal => x.includes(meal.id))
   }
   
 }
