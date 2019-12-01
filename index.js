@@ -213,7 +213,7 @@ class Customer {
     // return store.meals.filter(meal => x.includes(meal.id) );
     console.log(x);
     return x.forEach(mealId => function() {
-      return store.meals.filter(meal => meal.id === mealId)
+      return store.meals.filter(meal.id === mealId)
     }) 
   }
   
