@@ -232,7 +232,7 @@ class Meal {
   }
   
   customers() {
-    
+    return this.deliveries().customers();
   }
   
   byPrice() {
