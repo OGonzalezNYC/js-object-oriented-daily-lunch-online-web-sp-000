@@ -205,7 +205,7 @@ class Customer {
   
   
   totalSpent() {
-    // return 
+    return this.meals().map(meal => meal.price).reduce(sum, price);
   }
 }
 
