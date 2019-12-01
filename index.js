@@ -176,10 +176,10 @@ class Neighborhood {
   }
   
   meals() {
-    let y = this.deliveries().map(delivery => delivery.mealId);
+    let x = this.deliveries().map(delivery => delivery.mealId);
     // return store.meals.filter(function(meal) {
-    //   return y.includes(meal.id);
-    return store.meals.filter(meal => y.includes(meal.id))
+    //   return x.includes(meal.id);
+    return store.meals.filter(meal => x.includes(meal.id))
    }
   
 }
