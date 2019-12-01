@@ -227,4 +227,8 @@ class Meal {
     store.meals.push(this);
   }
   
+  deliveries() {
+    
+  }
+  
 }
