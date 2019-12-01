@@ -242,7 +242,7 @@ class Delivery {
   
   meal() {
     return store.meals.find(function(meal) {
-      this.mealId === meal.id;
+      return this.mealId === meal.id;
     }.bind(this))
   }
   
