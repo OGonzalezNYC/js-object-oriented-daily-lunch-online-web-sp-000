@@ -225,8 +225,8 @@ class Meal {
   }
   
   customers() {
-    return this.deliveries().map(function(delivery) { return delivery.customer()
-    });
+    return this.deliveries().map(delivery => delivery.customer()
+    );
   }
   
   byPrice() {
