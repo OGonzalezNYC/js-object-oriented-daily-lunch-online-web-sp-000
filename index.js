@@ -216,7 +216,7 @@ class Customer {
       return store.meals.filter(function(meal) {
         return meal.id === mealId;
       })
-   // }) 
+    }) 
   }
   
   
