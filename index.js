@@ -199,7 +199,7 @@ class Customer {
   
   meals() {
    return this.deliveries().map(function(delivery) {
-     delivery.meal
+     delivery.meal();
    })
   }
   
