@@ -231,4 +231,11 @@ class Meal {
     
   }
   
+  customers() {
+    
+  }
+  
+  byPrice() {
+    
+  }
 }
