@@ -167,11 +167,8 @@ class Neighborhood {
   }
   
   customers() {
-    let x = this.deliveries().map(function(delivery) {
-      return delivery.customerId})
-      
       return store.customers.filter(function(customer) {
-        return x.includes(customer.id)  
+        return customer.neighborhoodId === this.id 
       })
   }
   
