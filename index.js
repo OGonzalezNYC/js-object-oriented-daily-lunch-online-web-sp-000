@@ -178,7 +178,7 @@ class Neighborhood {
   meals() {
     let x = this.deliveries();
     let y = x.map(delivery => delivery.mealId);
-    return y;
+    console.log(y);
    }
   
 }
