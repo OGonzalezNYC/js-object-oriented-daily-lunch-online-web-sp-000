@@ -251,7 +251,7 @@ class Delivery {
   }
   
   neighborhood() {
-    return store.neighborhoods.filter(neighborhood => neighborhood.id === this.neighborhoodId);
+    return store.neighborhoods.find(neighborhood => neighborhood.id === this.neighborhoodId);
   }
   
 }
