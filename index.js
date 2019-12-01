@@ -214,7 +214,7 @@ class Customer {
     console.log(x);
     return x.forEach(mealId => function() {
       return store.meals.filter(function(meal) {
-        return meal.id === mealId
+        return meal.id === mealId;
       })
     }) 
   }
