@@ -246,4 +246,8 @@ class Delivery {
     }.bind(this))
   }
   
+  customer() {
+    return store.customers.filter(customer => customer.id === this.customerId);
+  }
+  
 }
