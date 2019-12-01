@@ -240,4 +240,10 @@ class Delivery {
     store.deliveries.push(this);
   }
   
+  meal() {
+    return store.meals.filter(function(meal) {
+      meal.id === this.mealId;
+    }.bind(this))
+  }
+  
 }
