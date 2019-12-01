@@ -178,9 +178,9 @@ class Neighborhood {
   meals() {
     let x = this.deliveries();
     let y = x.map(delivery => delivery.mealId);
-    return store.meals.filter(function(meal) {
-      return y.includes(meal.id);
-    })
+    // return store.meals.filter(function(meal) {
+    //   return y.includes(meal.id);
+    return store.meals.filter(meal => y.includes(meal.id))
    }
   
 }
