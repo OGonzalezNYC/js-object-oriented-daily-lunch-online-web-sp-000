@@ -182,17 +182,6 @@ class Neighborhood {
 }
 
 
-class Delivery {
-  constructor(mealId, neighborhoodId, customerId) {
-    this.mealId = mealId;
-    this.neighborhoodId = neighborhoodId;
-    this.customerId = customerId;
-    this.id = ++deliveryId;
-    store.deliveries.push(this);
-  }
-  
-}
-
 
 class Customer {
   constructor(name, neighborhoodId) {
@@ -219,6 +208,7 @@ class Customer {
 }
 
 
+
 class Meal {
   constructor(title, price) {
     this.title = title;
@@ -238,4 +228,16 @@ class Meal {
   byPrice() {
     
   }
+}
+
+
+class Delivery {
+  constructor(mealId, neighborhoodId, customerId) {
+    this.mealId = mealId;
+    this.neighborhoodId = neighborhoodId;
+    this.customerId = customerId;
+    this.id = ++deliveryId;
+    store.deliveries.push(this);
+  }
+  
 }
