@@ -250,4 +250,8 @@ class Delivery {
     return store.customers.filter(customer => customer.id === this.customerId);
   }
   
+  neighborhood() {
+    return store.neighborhoods.filter(neighborhood => neighborhood.id === this.neighborhoodId);
+  }
+  
 }
