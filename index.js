@@ -212,7 +212,7 @@ class Customer {
     let x = this.deliveries().map(delivery => delivery.mealId);
     // return store.meals.filter(meal => x.includes(meal.id) );
     console.log(x);
-    return x.forEach(mealId => function() {
+    //return x.forEach(mealId => function() {
       return store.meals.filter(function(meal) {
         return meal.id === mealId;
       })
