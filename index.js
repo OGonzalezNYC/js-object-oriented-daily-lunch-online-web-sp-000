@@ -176,7 +176,7 @@ class Neighborhood {
   }
   
   meals() {
-    
+    let x = this.deliveries();
    }
   
 }
